@@ -4,19 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Photo Gallery</title>
 	<link rel="stylesheet" href="css/gallery.css">
-	<script src = "js/gallery.js"></script>
+	<script src="js/gallery.js" defer></script>
 </head>
 <body>
+
+	<h1>Interactive Photo Gallery</h1>
+	<p>Hover or focus on an image below to display it in the large box.</p>
 	
-	<div id = "image">
+	<div id="image" role="img" aria-live="polite">
 		Hover over an image below to display here.
 	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+	<div class="gallery">
+		<img class="preview" src="images/cat1.webp" alt="Cat with tongue out">
+		<img class="preview" src="images/cat2.webp" alt="Cat yawning big">
+		<img class="preview" src="images/cat3.jpeg" alt="Cat inside a cardboard tank">
+		<img class="preview" src="images/cat4.jpeg" alt="Grumpy-looking cat">
+		<img class="preview" src="images/cat5.jpeg" alt="Cat standing and begging">
+		<img class="preview" src="images/cat6.jpg" alt="Cat studying a book">
+	</div>
 
 </body>
 </html>
